@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>My Portfolio | Kim Gupta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a5cb24c625.js"
+      crossorigin="anonymous"></script>
+      <link rel="icon" type="image/x-icon" href="images/android-chrome-512x512.png">
+  </head>
+  <body>
+    <!--Header section  -->
+    <div id="header">
+      <div class="container">
+      <nav class="nav-bar">
+          <a href="#"
+            ><h1 class="nav-text"><span>K</span>im</h1></a>
+          <ul id="sidemenu">
+             <li><a href="#header" class="active">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#services">Services</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#contact">Contact</a></li>
+             <i class="fas fa-xmark" onclick="closemenu()"></i>
+         </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <div>
+            <h1>Hi, I'm Kim Gupta</h1>
+            I am a <span class="role"></span>
+          </div>
+          <img src="/images/kim1.jpg" width="270" height="300" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/kim2.jpg" loading="lazy"/>
+          </div>
+          <div class="about-col-2">
+            <div class="sub-title">About Me</div>
+            <p>
+              Frontend developer with good problem-solving abilities. HTML, CSS,
+              and JavaScript expert with expertise designing responsive web
+              interfaces with React.js and Tailwind CSS. Committed to providing
+              engaging user experiences through elegant design, superior
+              performance, and creative solutions.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+        
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><img src="images/c++.png" width="30" />Java/JavaScript</li>
+                <li>
+
+                <li>
+                  <img src="images/data.png" width="30" />
+                  Data Structure & Algorithm
+                </li> 
+                <li id="text">
+                  <img src="images/html.png" width="30" />
+                  HTML, CSS and JavaScript
+                </li>
+                <li>
+                  <img src="images/tailwind-css-icon.png" width="30" />
+                  Bootstrap, CSS
+                </li>
+                <li><i class="fa-brands fa-react" id="react"></i>React Js</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span class="year">2020 - 2024</span><br />
+                  <p class="degree">
+                    B.Tech - Computer Science
+                  </p>
+                  <p class="grade">CGPA: 8.5</p>
+                  Babu Banarsi Das Institute of Technology and Management, Lucknow
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="year">2018 - 2020</span><br />
+                  <p class="degree">12th</p>
+                  <p class="grade"> Percentage: 94.60%</p>
+                Navayuga Rediance Senior Secondary School, Lucknow
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="year">2016 - 2018</span><br />
+                  <p class="degree">10th</p>
+                  <p class="grade"> Percentage: 87.00%</p>
+                  Navayuga Rediance Senior Secondary School, Lucknow
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div class="web-design-tab">
+            <img src="images/web-design.png" width="50" id="web-img" />
+            <h2>Web Design</h2>
+            <p>
+              Crafting exceptional web solutions that drive digital success.
+            </p>
+          </div>
+          <div class="web-design-tab">
+            <img src="images/data.png" width="50" />
+            <h2>Algo Design</h2>
+            <p>
+              Reducing Time Complexity and user-centric Algo designs that
+              stand out.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Poroject -->
+    <div id="projects">
+      <div class="container">
+        <div class="sub-title">My Projects</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/weather.jpg" />
+            <div class="layer">
+              <h3>Weather WebApp</h3>
+              <p>
+                The app can be used to discover weather information for both the
+                user's current location and the specified location
+              </p>
+              <a
+                href="https://kimgupta.github.io/Weather-App/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Calculater.jpg" />
+            <div class="layer">
+              <h3> Calculator </h3>
+              <p>
+               It makes easier the complex calculation, I use HTML, CSS & Javascript.
+              </p>
+              <a
+                href="https://kimgupta.github.io/Calculator-WebApp/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        
+          <div class="work">
+            <img src="images/news.avif" />
+            <div class="layer">
+              <h3>Live News App</h3>
+              <p>
+                The app can be used to discover Live news form variouse trusted source.</p>
+              <a
+                href="https://kimgupta.github.io/News-App/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <a href="mailto:kimgupta84018@gmail.com" class="contact-links">
+                <img src="images/gmail.png" width="30" />
+                kimgupta84018@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:+91 7084394994" class="contact-links">
+                <img src="images/phone-call.png" width="30" />
+
+                +91 7084394994
+              </a>
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/kim-gupta-806672272/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/kimgupta" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/Resume.pdf" download class="btn"
+              >Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="htttps://formsubmit.co/kimgupta84018@gmail.com" method="POST"
+            onsubmit="this.submit(); this.reset(); return false;">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter email"
+                required
+                id="email" />
+              <textarea
+                 name="Message"
+                 rows="6"
+                 required
+                 placeholder="Enter message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright section -->
+      <div class="copyright">
+        <p>Copyright © 2023 Kim Gupta <i class="fa-solid fa-heart"></i>. All Rights Reserved</p>
+      </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
